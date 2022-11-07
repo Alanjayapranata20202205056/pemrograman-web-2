@@ -6,13 +6,16 @@
     sort($pegrograman_php);
     rsort($pegrograman_python);
 
+    //bagian a
+    echo "bagian A <br/>";
     foreach ($pegrograman_php as $key) 
     {
         echo $key. "<br/>";
     }
 
     echo "<hr/>";
-
+    //bagian b
+    echo "bagian B <br/>";
     foreach ($pegrograman_python as $kuy)
     
     {
@@ -76,5 +79,5 @@
     }
     echo "<hr/>";
 
-    
+
 ?>
