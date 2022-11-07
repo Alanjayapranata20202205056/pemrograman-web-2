@@ -1,32 +1,28 @@
 <?php
     $pegrograman_php = array ("Andi","Budi","Wati","Gunawan","Baco","Becce","Fatma",);
-    sort($pegrograman_php);
 
     $pegrograman_python = array ("Andi","Fatma","Fadli","Haris","Baco",);
-    sort($pegrograman_python);
 
-    //bagian a
-    echo "<h4>bagian A <h4/>";
-    for($no=0; $no < count ($pegrograman_php) ; $no++)
+    sort($pegrograman_php);
+    rsort($pegrograman_python);
+
+    foreach ($pegrograman_php as $key) 
     {
-        echo $pegrograman_php[$no];
-        echo "<br/>";
+        echo $key. "<br/>";
     }
 
     echo "<hr/>";
 
-    //bagian b
-    echo "<h4>bagian B <h4/>";
-    for($no=0; $no < count ($pegrograman_python) ; $no++)
+    foreach ($pegrograman_python as $kuy)
+    
     {
-        echo $pegrograman_python[$no];
-        echo "<br/>";
+        echo $kuy. "<br/>";
     }
 
     echo "<hr/>";
 
     //bagian c
-    echo "<h4>bagian C <h4/>";
+    echo "bagian C <br/>";
     for($no=0; $no < count ($pegrograman_php) ; $no++)
     {
         if(!in_array($pegrograman_php[$no], $pegrograman_python))
@@ -39,7 +35,7 @@
     echo "<hr/>";
 
     //bagina d
-    echo "<h4>bagian D <h4/>";
+    echo "bagian D <br/>";
     for($no=0; $no < count ($pegrograman_python) ; $no++)
     {
         if(!in_array($pegrograman_python[$no], $pegrograman_php))
@@ -52,7 +48,7 @@
     echo"<hr/>";
 
     //bagian e
-    echo "<h4>bagian E <h4/>";
+    echo "bagian E <br/>";
     for($no=0; $no < count ($pegrograman_php) ; $no++){
     for($nu=0; $nu < count ($pegrograman_python) ; $nu++){
         if ($pegrograman_php[$no] == $pegrograman_python[$nu])
@@ -66,7 +62,7 @@
     echo "<hr/>";
 
     //bagian f
-    echo "<h4>bagian F <h4/>";
+    echo "bagian F <br/>";
     // datanya dimerge dulu / disatukan
     $datakeduanya = array_merge($pegrograman_php, $pegrograman_python);
     // data array dihapus jika terdapat duplikat
@@ -77,5 +73,8 @@
     for($no=0; $no < count ($databaru) ; $no++){
     echo $databaru[$no];
     echo "<br/>";
-}
+    }
+    echo "<hr/>";
+
+    
 ?>
