@@ -79,5 +79,12 @@
     }
     echo "<hr/>";
 
+    //bagian 13
+    echo "Nomor 12  <br/>";
+    $pegrograman_php = array ("Andi","Budi","Wati","Gunawan","Baco","Becce","Fatma",);
+    array_push($pegrograman_php, 'Alan');
+    foreach ($pegrograman_php as $kelompok_php) 
+    echo $kelompok_php."<br/>";
 
+    echo "<hr/>";
 ?>
